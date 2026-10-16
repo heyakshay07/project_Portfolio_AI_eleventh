@@ -113,7 +113,7 @@ Frontend runs at `http://localhost:5173` and proxies `/api/*` to the backend.
 
 **4. Or run everything with Docker Compose**
 ```powershell
-docker compose up --build
+docker compose up --build  
 ```
 
 ## Next steps (recommended order)

@@ -1,8 +1,9 @@
 import axios from "axios";
 
-// In dev, Vite proxies /api -> http://localhost:8000 (see vite.config.js)
+// In development, Vite proxies /api to the local FastAPI server. In deployed
+// builds, set VITE_API_URL to the Render service URL plus its /api prefix.
 const client = axios.create({
-  baseURL: "/api",
+  baseURL: import.meta.env.VITE_API_URL || "/api",
   headers: { "Content-Type": "application/json" },
 });
 
