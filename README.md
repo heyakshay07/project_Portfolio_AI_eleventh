@@ -121,7 +121,7 @@ docker compose up --build
 1. Drop your resume PDF into `frontend/public/Akshay_Patil_Resume.pdf`.
 2. Get a free Groq API key at console.groq.com and put it in `backend/.env`.
 3. Swap `create_all` for Alembic migrations before deploying.
-4. Deploy: backend + Postgres → Render/Neon (Docker), frontend → Vercel.
+4. Deploy: backend + Postgres → Render/Neon (Docker). The frontend can be deployed on Render using the root `render.yaml` Blueprint, or on Vercel.
 5. Optional: wire `AIChatWidget` up to a real vector store (pgvector) over
    your project READMEs instead of the fixed `resume_context.py` string —
    turns the assistant itself into a live DocuChat AI demo.
