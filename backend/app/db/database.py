@@ -2,11 +2,21 @@
 Async SQLAlchemy engine + session dependency for PostgreSQL.
 """
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
+from sqlalchemy.engine import make_url
 from sqlalchemy.orm import DeclarativeBase
 
 from app.config import settings
 
-engine = create_async_engine(settings.DATABASE_URL, echo=False, future=True)
+database_url = make_url(settings.DATABASE_URL)
+if database_url.drivername in {
+    "postgres",
+    "postgresql",
+    "postgresql+psycopg",
+    "postgresql+psycopg2",
+}:
+    database_url = database_url.set(drivername="postgresql+asyncpg")
+
+engine = create_async_engine(database_url, echo=False, future=True)
 AsyncSessionLocal = async_sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
 
 

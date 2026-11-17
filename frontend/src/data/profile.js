@@ -24,7 +24,7 @@ export const skillGroups = [
 export const experience = [
   {
     role: "Software / AI-ML Developer",
-    org: "Supra Technologies, Pune",
+    org: "Hexaweb Solutions, Pune",
     period: "Nov 2025 — Jul 2026",
     type: "Full-time",
     points: [

@@ -38,7 +38,7 @@ export default function Hero() {
           I design and ship RAG pipelines, ReAct agents, and multi-agent
           orchestration platforms — grounded in production-ready FastAPI
           backends, PostgreSQL, and React frontends. Currently building
-          AI-ML systems at Supra Technologies, Pune.
+          AI-ML systems at Hexaweb Solutions, Pune.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <a
