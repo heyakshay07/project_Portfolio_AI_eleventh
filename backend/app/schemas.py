@@ -29,3 +29,4 @@ class ProjectOut(BaseModel):
     stack: list[str]
     highlights: list[str]
     github: str | None = None
+    demo: str | None = None

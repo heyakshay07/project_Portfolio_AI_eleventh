@@ -27,18 +27,30 @@ export default function Projects() {
             whileHover={{ borderColor: "#7CFFB2" }}
             className="border border-line rounded-lg p-6 bg-panel/40 transition-colors"
           >
-            <div className="flex items-start justify-between">
+            <div className="flex items-start justify-between gap-4">
               <h3 className="font-display text-lg text-ink">{p.title}</h3>
-              {p.github && (
-                <a
-                  href={p.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-xs font-display text-signal hover:underline"
-                >
-                  code ↗
-                </a>
-              )}
+              <div className="flex shrink-0 gap-3">
+                {p.demo && (
+                  <a
+                    href={p.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs font-display text-signal hover:underline"
+                  >
+                    live ↗
+                  </a>
+                )}
+                {p.github && (
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs font-display text-signal hover:underline"
+                  >
+                    code ↗
+                  </a>
+                )}
+              </div>
             </div>
             <p className="text-sm text-muted mt-1">{p.tagline}</p>
             <ul className="mt-4 space-y-1.5">
