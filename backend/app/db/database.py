@@ -16,6 +16,12 @@ if database_url.drivername in {
 }:
     database_url = database_url.set(drivername="postgresql+asyncpg")
 
+query = dict(database_url.query)
+sslmode = query.pop("sslmode", None)
+if sslmode is not None:
+    query.setdefault("ssl", sslmode)
+    database_url = database_url.set(query=query)
+
 engine = create_async_engine(database_url, echo=False, future=True)
 AsyncSessionLocal = async_sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
 

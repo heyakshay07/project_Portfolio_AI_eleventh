@@ -17,7 +17,7 @@ Email: akshaypatil880537@gmail.com | GitHub: github.com/heyakshay07 | LinkedIn: 
 Open to AI/ML Engineer, GenAI/Agentic AI Developer, and Full Stack roles, remote/hybrid/on-site.
 
 EXPERIENCE
-- Software / AI-ML Developer, Hexaweb Solutions, Pune (Nov 2025 - Jul 2026, Full-time):
+- AI Engineer, Hexaweb Solutions, Pune (Nov 2025 - Jul 2026, Full-time):
   Built AI-powered applications using React, FastAPI, LangChain and LLMs, including a RAG chatbot with
   document-grounded responses and source attribution. Developed scalable REST APIs and RAG pipelines
   using embeddings, vector databases, and semantic retrieval. Integrated 20+ third-party/internal REST
