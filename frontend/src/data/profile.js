@@ -39,14 +39,16 @@ export const experience = [
     period: "May 2025 — Oct 2025",
     type: "Internship",
     points: [
-      "Developed responsive user-facing screens and forms using React.js in a sprint-based team with regular code reviews and QA cycles.",
+      "Built the Red Pizza website frontend in React, turning UI designs into responsive pages and reusable form components.",
+      "Managed application state with Redux Toolkit and integrated REST APIs for data fetching, submissions, and error handling.",
+      "Debugged UI and API integration issues found during testing to improve stability before release.",
     ],
   },
 ];
 
 export const education = [
-  { degree: "Master of Computer Applications (MCA)", school: "Sinhgad Institute, Pune", period: "2022 — 2024" },
-  { degree: "B.Sc. Computer Science", school: "Mooji Jaitha College, Jalgaon", period: "2019 — 2022" },
+  { degree: "Master of Computer Applications (MCA)", school: "Sinhgad Institute, Pune", period: "2022 — 2024", cgpa: "7.16" },
+  { degree: "B.Sc. Computer Science", school: "Mooji Jaitha College, Jalgaon", period: "2019 — 2022", cgpa: "8.40" },
 ];
 
 export const certifications = [

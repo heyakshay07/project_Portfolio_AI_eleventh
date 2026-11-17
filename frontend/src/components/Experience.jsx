@@ -42,7 +42,9 @@ export default function Experience() {
             {education.map((e) => (
               <li key={e.degree}>
                 <p className="text-ink text-sm font-medium">{e.degree}</p>
-                <p className="text-xs text-muted">{e.school} · {e.period}</p>
+                <p className="text-xs text-muted">
+                  {e.school} · {e.period} · CGPA: {e.cgpa}
+                </p>
               </li>
             ))}
           </ul>

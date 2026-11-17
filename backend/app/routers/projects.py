@@ -44,6 +44,17 @@ PROJECTS: list[ProjectOut] = [
         demo="https://project-ai-fourteen-pdfvoice.onrender.com/",
     ),
     ProjectOut(
+        slug="rhp-ipo-data-extraction",
+        title="RHP IPO Data Extraction Platform",
+        tagline="IPO prospectus extraction pipeline built at Hexaweb Solutions",
+        stack=["LangGraph", "Groq", "FastAPI", "PostgreSQL JSONB", "PyMuPDF"],
+        highlights=[
+            "Extracts price bands, issue size, timelines, reservations, KPIs, peers, and company profiles from 500+ page RHP PDFs",
+            "Uses schema-constrained JSON output to produce structured extraction results",
+            "Runs parallel chunk extraction with a round-robin Groq key pool and rate-limit cooldown",
+        ],
+    ),
+    ProjectOut(
         slug="taskflow-agent",
         title="TaskFlow Agent",
         tagline="Autonomous single-agent system with a ReAct loop",

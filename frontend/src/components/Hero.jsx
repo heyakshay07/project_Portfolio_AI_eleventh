@@ -53,6 +53,13 @@ export default function Hero() {
           >
             download résumé
           </a>
+          <a
+            href="/Akshay_Patil_Cover_Letter.pdf"
+            download
+            className="font-display text-sm px-5 py-2.5 border border-line text-ink rounded hover:border-signal/50 transition-colors"
+          >
+            download cover letter
+          </a>
         </div>
       </motion.div>
 
